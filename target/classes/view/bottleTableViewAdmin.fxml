@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="640.0" prefWidth="940.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.pwn.piotr.bazafx.controller.BottleTableControllerAdmin">
+   <children>
+      <TableView fx:id="bottleTable" layoutX="-1.0" layoutY="108.0" prefHeight="213.0" prefWidth="940.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="50.0" text="Id" />
+          <TableColumn fx:id="colRawMaterial" prefWidth="125.0" text="Tworzywo" />
+            <TableColumn fx:id="colNeck" prefWidth="93.0" text="Gwint" />
+            <TableColumn fx:id="colWeight" prefWidth="128.0" text="Waga" />
+            <TableColumn fx:id="colCtalogueNumber" prefWidth="181.0" text="Numer katalogowy" />
+            <TableColumn fx:id="colCapacity" prefWidth="152.0" text="Pojemność" />
+            <TableColumn fx:id="colNumberInPacking" prefWidth="204.0" text="Ilość w opakowaniu" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnBack" layoutX="14.0" layoutY="562.0" mnemonicParsing="false" onMouseClicked="#backAction" text="&lt;&lt; Back" />
+      <Separator layoutX="52.0" layoutY="94.0" prefHeight="0.0" prefWidth="815.0" />
+      <Label layoutX="90.0" layoutY="56.0" text="Gwint" />
+      <ComboBox fx:id="cmbFilterNeck" layoutX="142.0" layoutY="51.0" prefWidth="150.0" promptText="Select" />
+      <Label layoutX="377.0" layoutY="56.0" text="Pojemność" />
+      <ComboBox fx:id="cmbFilterCapacity" layoutX="460.0" layoutY="51.0" prefWidth="150.0" promptText="Select" />
+   </children>
+</AnchorPane>

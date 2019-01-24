@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="464.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.pwn.piotr.bazafx.controller.AdminAddUserController">
+   <children>
+      <Label layoutX="54.0" layoutY="85.0" text="Login:">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfLogin" layoutX="207.0" layoutY="88.0" promptText="Login" />
+      <Label layoutX="54.0" layoutY="141.0" text="Password: ">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfPassword" layoutX="207.0" layoutY="144.0" promptText="Password" />
+      <Button fx:id="btnBack" layoutX="50.0" layoutY="338.0" mnemonicParsing="false" onMouseClicked="#back" text="&lt;&lt; Back" />
+      <Button fx:id="btnSave" layoutX="207.0" layoutY="338.0" mnemonicParsing="false" onMouseClicked="#save" text="Save" />
+      <Label layoutX="54.0" layoutY="200.0" text="Role:">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="rbUser" layoutX="207.0" layoutY="208.0" mnemonicParsing="false" selected="true" text="User">
+         <toggleGroup>
+            <ToggleGroup fx:id="g1" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rbAdmin" layoutX="207.0" layoutY="244.0" mnemonicParsing="false" text="Admin" toggleGroup="$g1" />
+      <Label layoutX="54.0" layoutY="279.0" text="Active: ">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="rbActive" layoutX="207.0" layoutY="287.0" mnemonicParsing="false" selected="true" text="1">
+         <toggleGroup>
+            <ToggleGroup fx:id="g2" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rbNonActive" layoutX="278.0" layoutY="287.0" mnemonicParsing="false" text="0" toggleGroup="$g2" />
+   </children>
+</AnchorPane>
